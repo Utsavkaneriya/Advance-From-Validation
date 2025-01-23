@@ -1,0 +1,68 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Advanced Form Validation</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+        <div class="form-container">
+            <img src="/image/logo 2.jpeg" class="text-center raj"  alt="">
+            <h2>Create Account</h2>
+            <form id="signup-form">
+                <div class="form-field">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                <div class="form-field">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="form-field">
+                    <label for="phone">Contact Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <span class="error-message" id="phone-error"></span>
+                </div>
+                <div class="form-field">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <span class="error-message" id="password-error"></span>
+                </div>
+                <div class="form-field">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <span class="error-message" id="confirm-password-error"></span>
+                </div>
+                <div class="form-field">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required>
+                    <span class="error-message" id="city-error"></span>
+                </div>
+                <div class="form-field">
+                    <label for="country">Country:</label>
+                    <input type="text" id="country" name="country" required>
+                    <span class="error-message" id="country-error"></span>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+                <div id="success-message" class="success-message"></div>
+            </form>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+
+    </html>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

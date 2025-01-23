@@ -1,0 +1,145 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f4a261, #2a9d8f); /* Subtle gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    animation: backgroundAnimation 15s ease-in-out infinite; /* Background animation */
+}
+
+/* Animating the background gradient */
+@keyframes backgroundAnimation {
+    /* 0% { background: linear-gradient(135deg, #f4a261, #2a9d8f); }
+    50% { background: linear-gradient(135deg, #2a9d8f, #f4a261); }
+    100% { background: linear-gradient(135deg, #f4a261, #2a9d8f); } */
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards; /* Fade-in animation for the form */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.8em;
+    animation: fadeInText 1.5s ease-out forwards; /* Fade-in animation for header */
+}
+
+@keyframes fadeInText {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.form-field {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #4caf50;
+    outline: none;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5); /* Green glow effect on focus */
+}
+
+input:invalid {
+    border-color: red /* Red border for invalid inputs */
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+    opacity: 0;
+    animation: fadeInError 0.5s ease-out forwards; /* Animation for error messages */
+}
+
+@keyframes fadeInError {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.success-message {
+    color: green;
+    font-size: 16px;
+    margin-top: 20px;
+    display: none;
+    opacity: 0;
+    animation: fadeInSuccess 0.5s ease-out forwards; /* Animation for success message */
+}
+
+@keyframes fadeInSuccess {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: rgb(16, 148, 200);
+    transform: scale(1.05); /* Button hover animation */
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
+.raj{
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    margin-top: -85px !important;
+    border-radius: 50%;
+}
+
